@@ -41,7 +41,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('js', function () {
-  return gulp.src(settings.jsDir)
+  return gulp.src(settings.jsDir + '/*.js')
     .pipe(uglify())
     .pipe(gulp.dest(settings.jsOutDir))
     .pipe(browserSync.reload({stream: true}));

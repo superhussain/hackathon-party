@@ -1,0 +1,1 @@
+function lightsOut(){setTimeout(function(){$("body").addClass("lights-out")},4e3)}$(document).ready(function(){lightsOut()});
